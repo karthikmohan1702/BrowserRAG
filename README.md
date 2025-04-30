@@ -1,5 +1,11 @@
 # Browser RAG Project
 
+## BrowserRAG Demo
+
+
+https://github.com/user-attachments/assets/01b10db9-f36b-45c0-a509-79aa18865a8f
+
+
 ## Description
 
 This project implements a **Browser RAG** system. RAG, or Retrieval-Augmented Generation, is an AI framework designed to improve the quality and reliability of Large Language Model (LLM) responses by retrieving relevant information from an external knowledge base before generating an answer. This approach helps to ground the LLM's output in factual, up-to-date data, reducing inaccuracies or "hallucinations" and allowing the AI to leverage specific information beyond its initial training data.
@@ -83,7 +89,7 @@ Compared to traditional bookmarking, note-taking, or manual web searching, this 
 ## File Structure
 
 ```
-Session_7/
+BrowserRAG/
 ├── agent.py            # FastAPI backend application: API endpoints
 ├── memory.py           # Handles embedding, chunking, FAISS index
 ├── decision.py         # LLM calls (Gemini) for summarization & tool selection
