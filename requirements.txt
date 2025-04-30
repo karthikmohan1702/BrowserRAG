@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sentence-transformers
+faiss-cpu
+python-dotenv
+requests
+numpy
+fastmcp
+pydantic
+markitdown-mcp
