@@ -2,7 +2,6 @@
 
 ## BrowserRAG Demo
 
-
 https://github.com/user-attachments/assets/01b10db9-f36b-45c0-a509-79aa18865a8f
 
 
@@ -89,7 +88,7 @@ Compared to traditional bookmarking, note-taking, or manual web searching, this 
 ## File Structure
 
 ```
-BrowserRAG/
+Session_7/
 ├── agent.py            # FastAPI backend application: API endpoints
 ├── memory.py           # Handles embedding, chunking, FAISS index
 ├── decision.py         # LLM calls (Gemini) for summarization & tool selection
@@ -106,10 +105,11 @@ BrowserRAG/
     ├── popup.css       # Popup styling
     ├── content.js      # Script injected into web pages (for highlighting)
     ├── content.css     # Styles for content script elements
-    ├── background.js   # Extension service worker
     ├── options.html    # Extension options page UI
-    ├── icons/          # Extension icons
-    └── ...             # Other potential extension assets
+    └── icons/
+        ├── icon16.png
+        ├── icon48.png
+        └── icon128.png
 ```
 
 ## Configuration
