@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e51f061d-6724-4792-aaf7-aa8f13b7ce20)# Browser RAG Project
+# Browser RAG Project
 
 ## BrowserRAG Demo
 
