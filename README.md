@@ -4,7 +4,6 @@
 
 https://github.com/user-attachments/assets/01b10db9-f36b-45c0-a509-79aa18865a8f
 
-
 ## Description
 
 This project implements a **Browser RAG** system. RAG, or Retrieval-Augmented Generation, is an AI framework designed to improve the quality and reliability of Large Language Model (LLM) responses by retrieving relevant information from an external knowledge base before generating an answer. This approach helps to ground the LLM's output in factual, up-to-date data, reducing inaccuracies or "hallucinations" and allowing the AI to leverage specific information beyond its initial training data.
@@ -63,7 +62,13 @@ Compared to traditional bookmarking, note-taking, or manual web searching, this 
 2.  **Dependencies:** Install necessary Python packages (e.g., `fastapi`, `uvicorn`, `sentence-transformers`, `faiss-cpu` or `faiss-gpu`, `python-dotenv`, `requests`, `numpy`, `fastmcp`, `pydantic`).
 3.  **API Key:** Obtain a Gemini API key and set it as an environment variable named `GEMINI_API_KEY` (e.g., in a `.env` file).
 4.  **Markitdown MCP Server:** Ensure the Markitdown MCP server is running and accessible (the default client assumes `http://127.0.0.1:3001/sse`). See [Markitdown MCP documentation](https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp) for setup instructions.
-5.  **Run Backend:** Start the FastAPI application (e.g., using `uvicorn agent:app --reload`). The default URL is `http://127.0.0.1:8000`.
+5.  **Run Backend:** Start the FastAPI application from the root directory using:
+
+   ```sh
+   uvicorn backend.agent:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+   This ensures the backend is started with the correct module path after project reorganization.
 
 ### Chrome Extension
 
@@ -89,26 +94,27 @@ Compared to traditional bookmarking, note-taking, or manual web searching, this 
 
 ```
 Session_7/
-├── agent.py            # FastAPI backend application: API endpoints
-├── memory.py           # Handles embedding, chunking, FAISS index
-├── decision.py         # LLM calls (Gemini) for summarization & tool selection
-├── action.py           # Core logic for logging pages (using MCP) and searching
-├── faiss.index         # (Generated) Stores FAISS vector index
-├── chunks.pkl          # (Generated) Stores text chunks and metadata
-├── requirements.txt    # Project dependencies
-├── .env                # (Optional) For environment variables like API keys
-└── chrome_extension/
-    ├── manifest.json   # Extension configuration
-    ├── popup.html      # Popup UI structure
-    ├── popup.js        # Popup logic and backend interaction
-    ├── popup.css       # Popup styling
-    ├── content.js      # Script injected into web pages (for highlighting)
-    ├── content.css     # Styles for content script elements
-    ├── options.html    # Extension options page UI
-    └── icons/
-        ├── icon16.png
-        ├── icon48.png
-        └── icon128.png
+├── backend/
+│   ├── __init__.py
+│   ├── agent.py
+│   ├── action.py
+│   ├── decision.py
+│   ├── memory.py
+│   └── .env
+├── chrome_extension/
+│   ├── manifest.json
+│   ├── popup.html
+│   ├── popup.js
+│   ├── popup.css
+│   ├── content.js
+│   ├── content.css
+│   ├── options.html
+│   └── icons/
+│       ├── icon16.png
+│       ├── icon48.png
+│       └── icon128.png
+├── README.md
+├── requirements.txt
 ```
 
 ## Configuration
