@@ -93,7 +93,6 @@ Session_7/
 ├── memory.py           # Handles embedding, chunking, FAISS index
 ├── decision.py         # LLM calls (Gemini) for summarization & tool selection
 ├── action.py           # Core logic for logging pages (using MCP) and searching
-├── mcp_client.py       # Client script for interacting with Markitdown MCP
 ├── faiss.index         # (Generated) Stores FAISS vector index
 ├── chunks.pkl          # (Generated) Stores text chunks and metadata
 ├── requirements.txt    # Project dependencies
