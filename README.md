@@ -1,4 +1,4 @@
-# Browser RAG Project
+![image](https://github.com/user-attachments/assets/e51f061d-6724-4792-aaf7-aa8f13b7ce20)# Browser RAG Project
 
 ## BrowserRAG Demo
 
@@ -20,6 +20,9 @@ In today's information-rich online world, users often face challenges like:
 * **Scattered Knowledge:** Useful information bookmarked or noted across different places, making it hard to consolidate.
 * **Difficulty Recalling:** Forgetting where specific information was found or struggling to remember key details from past browsing.
 * **Inefficient Re-Searching:** Wasting time trying to re-find pages or re-google information previously encountered.
+  
+![challenges](https://github.com/user-attachments/assets/cf038ba1-2e2f-419d-8cb3-0c1d8f65cdec)
+
 
 This Browser RAG plugin addresses these needs by helping users:
 
@@ -28,6 +31,9 @@ This Browser RAG plugin addresses these needs by helping users:
 * **Deepen Understanding:** Ask clarifying questions and get AI-generated answers based *specifically* on the content you saved, enhancing comprehension.
 * **Boost Productivity:** Quickly access relevant saved information and summaries directly within your browser, streamlining research and learning workflows.
 * **Combat Information Fog:** Turn passive browsing into an active knowledge-building process, ensuring valuable online discoveries aren't lost.
+
+![enhanced_user_x](https://github.com/user-attachments/assets/854633bd-e94d-42a3-aa7c-7b61a1f9c8c6)
+
 
 ## Features
 
@@ -38,6 +44,9 @@ This Browser RAG plugin addresses these needs by helping users:
 * **Manage Indexed Pages:** View a list of indexed pages and delete entries directly from the extension popup.
 * **Delete Pages:** Remove any indexed URL and all its associated content from your personal knowledge base, either from the extension popup or via the backend API.
 * **Backend Health & Stats:** Check backend status and view FAISS index statistics.
+
+![chrome_extension_features](https://github.com/user-attachments/assets/8e945b93-814c-40e9-9e5e-39e0bd4dc292)
+
 
 ## Benefits Over Traditional Methods
 
@@ -83,7 +92,7 @@ Compared to traditional bookmarking, note-taking, or manual web searching, this 
 ## Usage
 
 1.  Navigate to a web page you want to interact with.
-2.  Click the "Vector Store Assistant" (or "Browser RAG") icon in your Chrome toolbar to open the popup.
+2.  Click the "Browser RAG" icon in your Chrome toolbar to open the popup.
 3.  **Log Page:** Click "Log Page" to fetch markdown via MCP, chunk, embed, and index the current page's content.
 4.  **Summarize Page:** Click "Summarize Page" to get an AI summary (requires the page to be logged first).
 5.  **Ask Questions:** Type a question about the indexed content into the text area and click "Ask". The results (answer and source URLs) will appear below.
